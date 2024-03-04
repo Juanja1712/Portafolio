@@ -1,0 +1,167 @@
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1{
+    color: rgb(83, 12, 116);
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 3rem;
+}
+
+span{
+    font-size: 2rem;
+    color: black;
+}
+
+.navegacion-bg{
+    background-color: rgb(52, 44, 103);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.navContainer{ 
+    display: flex;
+    padding: 1rem;
+    gap: 100px;
+    font-size: 2rem;
+}
+
+.navContainer a{
+    display: flex;
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+    border-radius: .5rem;
+    font-weight: 500;
+    padding: .8rem;
+}
+
+.navContainer a:hover, .contactBtn:hover{
+    color:rgb(52, 44, 103);
+    background-color: white;
+    border-color: rgb(52, 44, 103);
+}
+
+.contactContainer{
+    background-image: url(/IMG/estasi.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 75svh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}
+
+.contactContent{
+    font-size: 3rem;
+
+}
+
+.contactText{
+    color: white;
+    
+}
+
+.contactBtn{
+    background-color: rgb(52, 44, 103);
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.proyectsContainer{
+    display: flex;
+   flex-direction: row;
+    gap: 100px;
+    height: 34rem;
+}
+
+/*----------------------------------------------------------------*/
+
+.proyectsContainer {
+    overflow-x: scroll;
+    overflow-y: hidden; /* Para ocultar la barra de desplazamiento vertical en el área de desplazamiento */
+    max-width: 70%; /* Establece el ancho máximo del área de desplazamiento */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/*----------------------------------------------------------------*/
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 400px;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    font-size: 2rem;
+  }
+  
+  .slide {
+    flex: 1;
+    min-width: 100%;
+    height: 300px;
+    text-align: center;
+  }
+
+  .logoFresh{
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(196deg) brightness(10%) contrast(106%);
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: rgb(52, 44, 103);
+    color: white;
+    
+    &:hover{
+        color: rgb(52, 44, 103);
+        background-color: white;
+        border-color: rgb(52, 44, 103);
+        font-weight: 500;
+    }
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }

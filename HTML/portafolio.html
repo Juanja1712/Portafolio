@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/CSS/portafolio.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Juan Esteban Jaramillo David <span>P O R T A F O L I O</span></h1>
+    </header>
+
+    <section class="navegacion-bg">
+        <nav class="navContainer">
+            <a href="">INICIO</a>
+            <a href="">TRABAJOS</a>
+            <a href="">LOGIN</a>
+        </nav>
+    </section>
+    
+
+    <section class="contactContainer">
+        <div class="contactContent">
+            <h2 class="contactText">Portafolio de proyectos</h2>
+            <p class="contactText">Medellín - Colombia</p>
+            <a class="contactBtn" href="https://api.whatsapp.com/send?phone=+573007529489&text=Hola, Nececito mas informacion!">CONTACTAR</a>
+        </div>
+    </section>
+
+
+    <main>
+        <section>
+            <h1>PORTAFOLIOS</h1>
+            <P style="font-size: 2rem;">Descubre mi portafolio, donde convergen la creatividad y la dedicación. Cada proyecto es una expresión única de mi compromiso y pasión por el diseño [o tu campo de trabajo]. Desde piezas gráficas cautivadoras hasta soluciones innovadoras, mi portafolio refleja la búsqueda constante de la excelencia y la originalidad. Bienvenido a un recorrido visual que captura la esencia de mi trabajo con un toque auténtico.</P>
+        </section>
+
+        <section class="proyectsContainer">
+
+            <div class="proyectsWeb">
+                <div>
+                    <img src="/IMG/web.svg" alt="">
+                </div>
+                <div>
+                    <h2>PÁGINAS WEB</h2>
+                </div>
+
+                <div class="slider-container" id="slider1">
+                    <div class="slider">
+                        <div class="slide" id="slide1"><img width="200" height="150" src="/IMG/orcasLogo.jpg" alt=""><P>Orcas Club</P></div>
+                        <div class="slide" id="slide2"><img width="180" height="150" src="/IMG/Fresh.svg" class="logoFresh" alt=""><p>Fresh 2 Table</p></div>
+                        <div class="slide" id="slide3"><img width="100" height="150" src="/IMG/enano.jpg" alt=""><p>Enanos felices</p></div>
+                    </div>
+                    <button class="prev-button" onclick="changeSlide('slider1', -1)"><</button>
+                    <button class="next-button" onclick="changeSlide('slider1', 1)">></button>
+                </div>
+            </div>
+
+            <div class="proyectsDataBases">
+                <div>
+                    <img src="/IMG/api.svg" alt="">
+                </div>
+                <div>
+                    <h2>CONSUMO DE APIs</h2>
+                </div>
+                <div class="slider-container" id="slider2">
+                    <div class="slider">
+                        <div class="slide" id="slide1"><img width="200" height="150" src="/IMG/spacexLogo.png" alt=""><p>Misiones Space X</p></div>
+                        <div class="slide" id="slide2"><img width="150" height="150" src="/IMG/programming.jpg" alt=""></div>
+                        <div class="slide" id="slide3"><img width="150" height="150" src="/IMG/programming.jpg" alt=""></div>
+                    </div>
+                    <button class="prev-button" onclick="changeSlide('slider2', -1)"><</button>
+                    <button class="next-button" onclick="changeSlide('slider2', 1)">></button>
+                </div>
+            </div>
+            <div class="proyectsDataBases">
+                <div>
+                    <img src="/IMG/database.svg" alt="">
+                </div>
+                <div>
+                    <h2>BASES DE DATOS</h2> 
+                </div>
+                <div class="slider-container" id="slider3">
+                    <div class="slider">
+                        <div class="slide" id="slide1"><img width="150" height="150" src="/IMG/estasi.jpg" alt=""></div>
+                        <div class="slide" id="slide2"><img width="150" height="150" src="/IMG/programming.jpg" alt=""></div>
+                        <div class="slide" id="slide3"><img width="150" height="150" src="/IMG/programming.jpg" alt=""></div>
+                    </div>
+                    <button class="prev-button" onclick="changeSlide('slider3', -1)"><</button>
+                    <button class="next-button" onclick="changeSlide('slider3', 1)">></button>
+                </div>
+            </div>
+        </section>
+    </main>
+      
+
+
+    
+    <script src="/JS/sliders/function.js"></script>
+</body>
+</html>
