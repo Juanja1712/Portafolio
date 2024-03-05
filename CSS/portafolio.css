@@ -55,7 +55,7 @@ span{
 }
 
 .contactContainer{
-    background-image: url(/IMG/estasi.jpg);
+    background-image: url(IMG/background.jpg);
     background-size: cover;
     background-repeat: repeat;
     height: 75svh;
@@ -102,12 +102,17 @@ main{
     height: 34rem;
 }
 
+.portfolioDesc{
+    font-size: 2rem;
+    width: 100rem;
+}
+
 /*----------------------------------------------------------------*/
 
 .proyectsContainer {
     overflow-x: scroll;
-    overflow-y: hidden; /* Para ocultar la barra de desplazamiento vertical en el área de desplazamiento */
-    max-width: 70%; /* Establece el ancho máximo del área de desplazamiento */
+    overflow-y: hidden; 
+    max-width: 70%; 
     border: 1px solid #ccc;
     padding: 10px;
 }
