@@ -55,7 +55,7 @@ span{
 }
 
 .contactContainer{
-    background-image: url(IMG/background.jpg);
+    background-image: url(../IMG/background.jpg);
     background-size: cover;
     background-repeat: repeat;
     height: 75svh;
